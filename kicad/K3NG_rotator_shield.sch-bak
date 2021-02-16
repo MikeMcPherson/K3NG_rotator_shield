@@ -537,15 +537,4 @@ Wire Wire Line
 	7500 3300 7600 3300
 Wire Wire Line
 	7600 3300 7600 3500
-$Comp
-L Connector:Screw_Terminal_01x06 J?
-U 1 1 60374D82
-P 5900 2250
-F 0 "J?" H 5980 2242 50  0000 L CNN
-F 1 "Screw_Terminal_01x06" H 5980 2151 50  0000 L CNN
-F 2 "" H 5900 2250 50  0001 C CNN
-F 3 "~" H 5900 2250 50  0001 C CNN
-	1    5900 2250
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

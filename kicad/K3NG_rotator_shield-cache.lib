@@ -1,15 +1,15 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_01x01
+# Connector_Generic_Conn_01x01
 #
-DEF Connector_Generic:Conn_01x01 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic:Conn_01x01" 0 -100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
 S -50 5 0 -5 1 1 6 N
@@ -18,11 +18,11 @@ X Pin_1 1 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x06
+# Connector_Generic_Conn_01x06
 #
-DEF Connector_Generic:Conn_01x06 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x06 J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Generic:Conn_01x06" 0 -400 50 H V C CNN
+F1 "Connector_Generic_Conn_01x06" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -45,11 +45,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x08
+# Connector_Generic_Conn_01x08
 #
-DEF Connector_Generic:Conn_01x08 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x08 J 0 40 Y N 1 F N
 F0 "J" 0 400 50 H V C CNN
-F1 "Connector_Generic:Conn_01x08" 0 -500 50 H V C CNN
+F1 "Connector_Generic_Conn_01x08" 0 -500 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -76,11 +76,11 @@ X Pin_8 8 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_01x10
+# Connector_Generic_Conn_01x10
 #
-DEF Connector_Generic:Conn_01x10 J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_01x10 J 0 40 Y N 1 F N
 F0 "J" 0 500 50 H V C CNN
-F1 "Connector_Generic:Conn_01x10" 0 -600 50 H V C CNN
+F1 "Connector_Generic_Conn_01x10" 0 -600 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -111,11 +111,115 @@ X Pin_9 9 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# power:+3.3V
+# Connector_Screw_Terminal_01x06
 #
-DEF power:+3.3V #PWR 0 0 Y Y 1 F P
+DEF Connector_Screw_Terminal_01x06 J 0 40 Y N 1 F N
+F0 "J" 0 300 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x06" 0 -400 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -300 25 1 1 6 N
+C 0 -200 25 1 1 6 N
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+C 0 100 25 1 1 6 N
+C 0 200 25 1 1 6 N
+S -50 250 50 -350 1 1 10 f
+P 2 1 1 6 -21 -287 13 -320 N
+P 2 1 1 6 -21 -187 13 -220 N
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -21 113 13 80 N
+P 2 1 1 6 -21 213 13 180 N
+P 2 1 1 6 -14 -280 20 -313 N
+P 2 1 1 6 -14 -180 20 -213 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+P 2 1 1 6 -14 120 20 87 N
+P 2 1 1 6 -14 220 20 187 N
+X Pin_1 1 -200 200 150 R 50 50 1 1 P
+X Pin_2 2 -200 100 150 R 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 -200 -100 150 R 50 50 1 1 P
+X Pin_5 5 -200 -200 150 R 50 50 1 1 P
+X Pin_6 6 -200 -300 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_2N2222Ae3
+#
+DEF SamacSys_Parts_2N2222Ae3 Q 0 30 Y Y 1 F N
+F0 "Q" 550 50 50 H V L CNN
+F1 "SamacSys_Parts_2N2222Ae3" 550 -50 50 H V L CNN
+F2 "JANTX2N2222A" 550 -150 50 H I L CNN
+F3 "https://www.microsemi.com/document-portal/doc_download/8898-lds-0060-datasheet" 550 -250 50 H I L CNN
+F4 "Bipolar (BJT) Transistor NPN 50V 800mA 500mW Through Hole TO-18" 550 -350 50 H I L CNN "Description"
+F5 "2.16" 550 -450 50 H I L CNN "Height"
+F6 "Microsemi Corporation" 550 -550 50 H I L CNN "Manufacturer_Name"
+F7 "2N2222Ae3" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+F8 "494-2N2222AE3" 550 -750 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/2N2222Ae3/?qs=1mbolxNpo8c9lgGJRDEvpg%3D%3D" 550 -850 50 H I L CNN "Mouser Price/Stock"
+F10 "2N2222AE3" 550 -950 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/2n2222ae3/microsemi" 550 -1050 50 H I L CNN "Arrow Price/Stock"
+DRAW
+C 350 0 158 0 1 10 N
+P 2 0 1 6 100 0 300 0 N
+P 2 0 1 6 300 -50 400 -150 N
+P 2 0 1 6 300 50 400 150 N
+P 2 0 1 20 300 100 300 -100 N
+P 2 0 1 6 400 -150 400 -200 N
+P 2 0 1 6 400 150 400 200 N
+P 4 0 1 10 330 -100 350 -80 370 -120 330 -100 F
+X ~ 1 400 -300 100 U 50 50 0 0 P
+X ~ 2 0 0 100 R 50 50 0 0 P
+X ~ 3 400 300 100 D 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# power_+3.3V
+#
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3.3V" 0 140 50 H V C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -127,11 +231,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -142,11 +246,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GND
+# power_GND
 #
-DEF power:GND #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
