@@ -327,13 +327,13 @@ $EndComp
 $Comp
 L power:GND #PWR011
 U 1 1 602D6E17
-P 3150 2250
-F 0 "#PWR011" H 3150 2000 50  0001 C CNN
-F 1 "GND" H 3155 2077 50  0000 C CNN
-F 2 "" H 3150 2250 50  0001 C CNN
-F 3 "" H 3150 2250 50  0001 C CNN
-	1    3150 2250
-	1    0    0    1   
+P 4050 3300
+F 0 "#PWR011" H 4050 3050 50  0001 C CNN
+F 1 "GND" H 4055 3127 50  0000 C CNN
+F 2 "" H 4050 3300 50  0001 C CNN
+F 3 "" H 4050 3300 50  0001 C CNN
+	1    4050 3300
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2250 3250 3150 3250
@@ -555,7 +555,7 @@ F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/2N2222A?qs=UMEuL5
 F 10 "" H 7450 3850 50  0001 L CNN "Arrow Part Number"
 F 11 "" H 7450 3750 50  0001 L CNN "Arrow Price/Stock"
 	1    6900 4800
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Connection ~ 6500 4500
 $Comp
@@ -575,43 +575,10 @@ F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/2N2222A?qs=UMEuL5
 F 10 "" H 6350 2750 50  0001 L CNN "Arrow Part Number"
 F 11 "" H 6350 2650 50  0001 L CNN "Arrow Price/Stock"
 	1    5800 3700
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7100 4400 7100 4800
-$Comp
-L SamacSys_Parts:D6C40F2LFS S1
-U 1 1 60389B07
-P 4350 2800
-F 0 "S1" H 4950 2435 50  0000 C CNN
-F 1 "D6C40F2LFS" H 4950 2526 50  0000 C CNN
-F 2 "SamacSys_Parts:D6C40F2LFS" H 5400 2900 50  0001 L CNN
-F 3 "https://www.arrow.com/en/products/d6c40f2lfs/ck" H 5400 2800 50  0001 L CNN
-F 4 "Pushbutton Switches Key Switch N.O. SPDT 100 mA" H 5400 2700 50  0001 L CNN "Description"
-F 5 "9.8" H 5400 2600 50  0001 L CNN "Height"
-F 6 "C & K COMPONENTS" H 5400 2500 50  0001 L CNN "Manufacturer_Name"
-F 7 "D6C40F2LFS" H 5400 2400 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "611-D6C40F2LFS" H 5400 2300 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/CK/D6C40F2LFS/?qs=sb%252But3Lm4x0zytIpqAQYSQ%3D%3D" H 5400 2200 50  0001 L CNN "Mouser Price/Stock"
-F 10 "D6C40F2LFS" H 5400 2100 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/d6c40f2lfs/ck" H 5400 2000 50  0001 L CNN "Arrow Price/Stock"
-	1    4350 2800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3150 3250 3150 2800
-Wire Wire Line
-	3150 3250 4350 3250
-Wire Wire Line
-	4350 3250 4350 2800
-Connection ~ 3150 3250
-Wire Wire Line
-	3150 2700 3150 2250
-Wire Wire Line
-	4350 2700 4350 2250
-Wire Wire Line
-	4350 2250 3150 2250
-Connection ~ 3150 2250
 NoConn ~ 1300 4450
 NoConn ~ 1300 4350
 NoConn ~ 1750 4350
@@ -680,4 +647,35 @@ Wire Wire Line
 	5800 3700 6050 3700
 Wire Wire Line
 	6550 3700 8750 3700
+$Comp
+L SamacSys_Parts:1825967-2 S1
+U 1 1 6030171D
+P 3150 3150
+F 0 "S1" H 3550 3415 50  0000 C CNN
+F 1 "1825967-2" H 3550 3324 50  0000 C CNN
+F 2 "SamacSys_Parts:18259672" H 3800 3250 50  0001 L CNN
+F 3 "http://www.farnell.com/cad/1885104.pdf?_ga=2.168058273.1018450153.1518464186-2047430813.1516449236" H 3800 3150 50  0001 L CNN
+F 4 "Tactile switch,PCB,SPST,high temp,sq act" H 3800 3050 50  0001 L CNN "Description"
+F 5 "7" H 3800 2950 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 3800 2850 50  0001 L CNN "Manufacturer_Name"
+F 7 "1825967-2" H 3800 2750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "N/A" H 3800 2650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/1825967-2/?qs=bdENzIhz2rnlrAt6CULBDw%3D%3D" H 3800 2550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "1825967-2" H 3800 2450 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/1825967-2/te-connectivity" H 3800 2350 50  0001 L CNN "Arrow Price/Stock"
+	1    3150 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3150 3150 3250
+Connection ~ 3150 3250
+Wire Wire Line
+	3950 3150 4050 3150
+Wire Wire Line
+	3950 3250 4050 3250
+Wire Wire Line
+	4050 3250 4050 3150
+Wire Wire Line
+	4050 3300 4050 3250
+Connection ~ 4050 3250
 $EndSCHEMATC
