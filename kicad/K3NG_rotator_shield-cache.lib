@@ -1,20 +1,49 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic_Conn_01x01
+# 2021-02-19_01-40-20_CFM14JT4K70
 #
-DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+DEF 2021-02-19_01-40-20_CFM14JT4K70 R 0 -100 N Y 1 L N
+F0 "R" 225 150 60 H V C CNN
+F1 "2021-02-19_01-40-20_CFM14JT4K70" 250 -275 60 H V C CNN
+F2 "STA_CFM14_STP" 250 -335 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
 $FPLIST
- Connector*:*_1x??_*
+ STA_CFM14_STP
 $ENDFPLIST
 DRAW
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -50 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
+P 2 1 1 8 100 0 125 50 N
+P 2 1 1 8 125 50 175 -50 N
+P 2 1 1 8 175 -50 225 50 N
+P 2 1 1 8 225 50 275 -50 N
+P 2 1 1 8 275 -50 325 50 N
+P 2 1 1 8 325 50 375 -50 N
+P 2 1 1 8 375 -50 400 0 N
+X 1 1 0 0 100 R 59 59 1 1 U
+X 2 2 500 0 100 L 59 59 1 1 U
+ENDDRAW
+ENDDEF
+#
+# 2021-02-19_01-51-00_CFM14JT1K00
+#
+DEF 2021-02-19_01-51-00_CFM14JT1K00 R 0 -100 N Y 1 L N
+F0 "R" 225 150 60 H V C CNN
+F1 "2021-02-19_01-51-00_CFM14JT1K00" 250 -275 60 H V C CNN
+F2 "STA_CFM14_STP" 250 -335 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ STA_CFM14_STP
+$ENDFPLIST
+DRAW
+P 2 1 1 8 100 0 125 50 N
+P 2 1 1 8 125 50 175 -50 N
+P 2 1 1 8 175 -50 225 50 N
+P 2 1 1 8 225 50 275 -50 N
+P 2 1 1 8 275 -50 325 50 N
+P 2 1 1 8 325 50 375 -50 N
+P 2 1 1 8 375 -50 400 0 N
+X 1 1 0 0 100 R 59 59 1 1 U
+X 2 2 500 0 100 L 59 59 1 1 U
 ENDDRAW
 ENDDEF
 #
@@ -150,76 +179,18 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_C
+# SamacSys_Parts_2N2222A
 #
-DEF Device_C C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_C" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
-DRAW
-P 2 0 1 20 -80 -30 80 -30 N
-P 2 0 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_CP
-#
-DEF Device_CP C 0 10 N Y 1 F N
-F0 "C" 25 100 50 H V L CNN
-F1 "Device_CP" 25 -100 50 H V L CNN
-F2 "" 38 -150 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- CP_*
-$ENDFPLIST
-DRAW
-S -90 20 90 40 0 1 0 N
-S 90 -20 -90 -40 0 1 0 F
-P 2 0 1 0 -70 90 -30 90 N
-P 2 0 1 0 -50 110 -50 70 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_R
-#
-DEF Device_R R 0 0 N Y 1 F N
-F0 "R" 80 0 50 V V C CNN
-F1 "Device_R" 0 0 50 V V C CNN
-F2 "" -70 0 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -40 -100 40 100 0 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# SamacSys_Parts_2N2222Ae3
-#
-DEF SamacSys_Parts_2N2222Ae3 Q 0 30 Y Y 1 F N
+DEF SamacSys_Parts_2N2222A Q 0 30 Y Y 1 F N
 F0 "Q" 550 50 50 H V L CNN
-F1 "SamacSys_Parts_2N2222Ae3" 550 -50 50 H V L CNN
-F2 "JANTX2N2222A" 550 -150 50 H I L CNN
-F3 "https://www.microsemi.com/document-portal/doc_download/8898-lds-0060-datasheet" 550 -250 50 H I L CNN
-F4 "Bipolar (BJT) Transistor NPN 50V 800mA 500mW Through Hole TO-18" 550 -350 50 H I L CNN "Description"
-F5 "2.16" 550 -450 50 H I L CNN "Height"
-F6 "Microsemi Corporation" 550 -550 50 H I L CNN "Manufacturer_Name"
-F7 "2N2222Ae3" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
-F8 "494-2N2222AE3" 550 -750 50 H I L CNN "Mouser Part Number"
-F9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/2N2222Ae3/?qs=1mbolxNpo8c9lgGJRDEvpg%3D%3D" 550 -850 50 H I L CNN "Mouser Price/Stock"
-F10 "2N2222AE3" 550 -950 50 H I L CNN "Arrow Part Number"
-F11 "https://www.arrow.com/en/products/2n2222ae3/microsemi" 550 -1050 50 H I L CNN "Arrow Price/Stock"
+F1 "SamacSys_Parts_2N2222A" 550 -50 50 H V L CNN
+F2 "TO-18_4" 550 -150 50 H I L CNN
+F3 "http://docs-emea.rs-online.com/webdocs/0e77/0900766b80e779e1.pdf" 550 -250 50 H I L CNN
+F4 "Transistor NPN 40V 0.6A TO-18" 550 -350 50 H I L CNN "Description"
+F5 "STMicroelectronics" 550 -550 50 H I L CNN "Manufacturer_Name"
+F6 "2N2222A" 550 -650 50 H I L CNN "Manufacturer_Part_Number"
+F7 "511-2N2222A" 550 -750 50 H I L CNN "Mouser Part Number"
+F8 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/2N2222A?qs=UMEuL5FsraBzcgM1cdcH3A%3D%3D" 550 -850 50 H I L CNN "Mouser Price/Stock"
 DRAW
 C 350 0 158 0 1 10 N
 P 2 0 1 6 100 0 300 0 N
@@ -229,36 +200,83 @@ P 2 0 1 20 300 100 300 -100 N
 P 2 0 1 6 400 -150 400 -200 N
 P 2 0 1 6 400 150 400 200 N
 P 4 0 1 10 330 -100 350 -80 370 -120 330 -100 F
-X ~ 1 400 -300 100 U 50 50 0 0 P
-X ~ 2 0 0 100 R 50 50 0 0 P
-X ~ 3 400 300 100 D 50 50 0 0 P
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 400 300 100 D 50 50 0 0 P
+X ~ 3 400 -300 100 U 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_Push_Dual
+# SamacSys_Parts_D6C40F2LFS
 #
-DEF Switch_SW_Push_Dual SW 0 40 Y N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push_Dual" 0 -270 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
+DEF SamacSys_Parts_D6C40F2LFS S 0 30 Y Y 1 F N
+F0 "S" 1050 300 50 H V L CNN
+F1 "SamacSys_Parts_D6C40F2LFS" 1050 200 50 H V L CNN
+F2 "D6C40F2LFS" 1050 100 50 H I L CNN
+F3 "https://www.arrow.com/en/products/d6c40f2lfs/ck" 1050 0 50 H I L CNN
+F4 "Pushbutton Switches Key Switch N.O. SPDT 100 mA" 1050 -100 50 H I L CNN "Description"
+F5 "9.8" 1050 -200 50 H I L CNN "Height"
+F6 "C & K COMPONENTS" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "D6C40F2LFS" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "611-D6C40F2LFS" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/CK/D6C40F2LFS/?qs=sb%252But3Lm4x0zytIpqAQYSQ%3D%3D" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "D6C40F2LFS" 1050 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/d6c40f2lfs/ck" 1050 -800 50 H I L CNN "Arrow Price/Stock"
 DRAW
-C -80 -200 20 0 1 0 N
-C -80 0 20 0 1 0 N
-C 80 -200 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 -120 0 -140 N
-P 2 0 1 0 0 -80 0 -100 N
-P 2 0 1 0 0 -60 0 -40 N
-P 2 0 1 0 0 -20 0 0 N
-P 2 0 1 0 0 20 0 40 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 -150 -100 -150 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
-X 3 3 -200 -200 100 R 50 50 0 1 P
-X 4 4 200 -200 100 L 50 50 0 1 P
+P 5 0 1 6 200 100 1000 100 1000 -200 200 -200 200 100 N
+X COM_1 1 0 -100 200 R 50 50 0 0 P
+X COM_2 2 1200 -100 200 L 50 50 0 0 P
+X NO_1 3 1200 0 200 L 50 50 0 0 P
+X NO_2 4 0 0 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_EEA-GA1E100B
+#
+DEF SamacSys_Parts_EEA-GA1E100B C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "SamacSys_Parts_EEA-GA1E100B" 350 150 50 H V L CNN
+F2 "CAPPRD150W50D400H800" 350 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/2/EEA-GA1E100B.pdf" 350 -50 50 H I L CNN
+F4 "PANASONIC ELECTRONIC COMPONENTS - EEA-GA1E100B - CAPACITOR, ALUM ELEC, 10UF, 5%, 25V, RADIAL LEADED" 350 -150 50 H I L CNN "Description"
+F5 "8" 350 -250 50 H I L CNN "Height"
+F6 "Panasonic" 350 -350 50 H I L CNN "Manufacturer_Name"
+F7 "EEA-GA1E100B" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "667-EEA-GA1E100B" 350 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Panasonic/EEA-GA1E100B/?qs=6gIVE1Jgg%2Fy3qqkV0wnwqw%3D%3D" 350 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "EEA-GA1E100B" 350 -750 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/eea-ga1e100b/panasonic" 350 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SamacSys_Parts_RDER71H103K0M1H03A
+#
+DEF SamacSys_Parts_RDER71H103K0M1H03A C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "SamacSys_Parts_RDER71H103K0M1H03A" 350 150 50 H V L CNN
+F2 "RCE5C1H103J1A2H03B" 350 50 50 H I L CNN
+F3 "https://psearch.en.murata.com/capacitor/product/RDER71H103K0M1H03A.html" 350 -50 50 H I L CNN
+F4 "Murata 10nF Multilayer Ceramic Capacitor (MLCC) 50 V dc +/-10% X7R Dielectric Ammo Radial Max. Op. Temp. +125C" 350 -150 50 H I L CNN "Description"
+F5 "5" 350 -250 50 H I L CNN "Height"
+F6 "Murata Electronics" 350 -350 50 H I L CNN "Manufacturer_Name"
+F7 "RDER71H103K0M1H03A" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F8 "81-RDER71H103K0M1H3A" 350 -550 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/RDER71H103K0M1H03A/?qs=fPnNQ8fp3P6BVTqXbcHgxg%3D%3D" 350 -650 50 H I L CNN "Mouser Price/Stock"
+F10 "RDER71H103K0M1H03A" 350 -750 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/rder71h103k0m1h03a/murata-manufacturing" 350 -850 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #

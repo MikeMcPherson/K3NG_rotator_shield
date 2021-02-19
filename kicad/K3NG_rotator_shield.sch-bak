@@ -25,9 +25,9 @@ Text Label 1750 4150 0    60   ~ 0
 A2
 Text Label 1750 4250 0    60   ~ 0
 A3
-Text Label 1750 4350 0    60   ~ 0
+Text Label 1300 4350 0    60   ~ 0
 A4(SDA)
-Text Label 1750 4450 0    60   ~ 0
+Text Label 1300 4450 0    60   ~ 0
 A5(SCL)
 NoConn ~ 2250 3050
 $Comp
@@ -87,54 +87,6 @@ F 3 "" H 2450 4150 50  0000 C CNN
 	1    2450 4150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P5
-U 1 1 56D71177
-P 3000 2400
-F 0 "P5" V 3100 2400 50  0000 C CNN
-F 1 "CONN_01X01" V 3100 2400 50  0001 C CNN
-F 2 "Socket_Arduino_Uno:Arduino_1pin" H 2921 2474 20  0000 C CNN
-F 3 "" H 3000 2400 50  0000 C CNN
-	1    3000 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P6
-U 1 1 56D71274
-P 3100 2400
-F 0 "P6" V 3200 2400 50  0000 C CNN
-F 1 "CONN_01X01" V 3200 2400 50  0001 C CNN
-F 2 "Socket_Arduino_Uno:Arduino_1pin" H 3100 2400 20  0001 C CNN
-F 3 "" H 3100 2400 50  0000 C CNN
-	1    3100 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P7
-U 1 1 56D712A8
-P 3200 2400
-F 0 "P7" V 3300 2400 50  0000 C CNN
-F 1 "CONN_01X01" V 3300 2400 50  0001 C CNN
-F 2 "Socket_Arduino_Uno:Arduino_1pin" V 3200 2400 20  0001 C CNN
-F 3 "" H 3200 2400 50  0000 C CNN
-	1    3200 2400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 P8
-U 1 1 56D712DB
-P 3300 2400
-F 0 "P8" V 3400 2400 50  0000 C CNN
-F 1 "CONN_01X01" V 3400 2400 50  0001 C CNN
-F 2 "Socket_Arduino_Uno:Arduino_1pin" H 3224 2322 20  0000 C CNN
-F 3 "" H 3300 2400 50  0000 C CNN
-	1    3300 2400
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 3000 2600
-NoConn ~ 3100 2600
-NoConn ~ 3200 2600
-NoConn ~ 3300 2600
 Wire Wire Line
 	2200 2900 2200 3150
 Wire Wire Line
@@ -174,10 +126,6 @@ Wire Wire Line
 	2250 3250 1500 3250
 Text Notes 2550 3050 0    60   ~ 0
 1
-Wire Notes Line
-	2900 2750 2900 2250
-Wire Notes Line
-	3400 2750 2900 2750
 Wire Wire Line
 	8850 2900 8850 4550
 Wire Wire Line
@@ -247,11 +195,9 @@ F 3 "" H 8850 4550 50  0000 C CNN
 	1    8850 4550
 	1    0    0    -1  
 $EndComp
-Text Notes 3050 2750 0    60   ~ 0
-Holes
-Text Label 9100 2600 0    60   ~ 0
+Text Label 9450 2600 0    60   ~ 0
 A5(SCL)
-Text Label 9100 2700 0    60   ~ 0
+Text Label 9450 2700 0    60   ~ 0
 A4(SDA)
 Text Label 9100 2800 0    60   ~ 0
 AREF
@@ -284,74 +230,14 @@ Text Label 9100 4200 0    60   ~ 0
 Text Label 9100 4400 0    60   ~ 0
 0(Rx)
 $Comp
-L Device:R R2
-U 1 1 602E1920
-P 6050 3700
-F 0 "R2" V 5950 3650 50  0000 L CNN
-F 1 "1k" V 6120 3655 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5980 3700 50  0001 C CNN
-F 3 "~" H 6050 3700 50  0001 C CNN
-	1    6050 3700
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 602E2511
-P 7550 4400
-F 0 "R4" V 7450 4350 50  0000 L CNN
-F 1 "1k" V 7620 4355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7480 4400 50  0001 C CNN
-F 3 "~" H 7550 4400 50  0001 C CNN
-	1    7550 4400
-	0    1    -1   0   
-$EndComp
-$Comp
-L SamacSys_Parts:2N2222Ae3 Q2
-U 1 1 602E4E92
-P 7300 4400
-F 0 "Q2" H 7838 4446 50  0000 L CNN
-F 1 "2N2222Ae3" H 7838 4355 50  0000 L CNN
-F 2 "SamacSys_Parts:JANTX2N2222A" H 7850 4250 50  0001 L CNN
-F 3 "https://www.microsemi.com/document-portal/doc_download/8898-lds-0060-datasheet" H 7850 4150 50  0001 L CNN
-F 4 "Bipolar (BJT) Transistor NPN 50V 800mA 500mW Through Hole TO-18" H 7850 4050 50  0001 L CNN "Description"
-F 5 "2.16" H 7850 3950 50  0001 L CNN "Height"
-F 6 "Microsemi Corporation" H 7850 3850 50  0001 L CNN "Manufacturer_Name"
-F 7 "2N2222Ae3" H 7850 3750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "494-2N2222AE3" H 7850 3650 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/2N2222Ae3/?qs=1mbolxNpo8c9lgGJRDEvpg%3D%3D" H 7850 3550 50  0001 L CNN "Mouser Price/Stock"
-F 10 "2N2222AE3" H 7850 3450 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/2n2222ae3/microsemi" H 7850 3350 50  0001 L CNN "Arrow Price/Stock"
-	1    7300 4400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L SamacSys_Parts:2N2222Ae3 Q1
-U 1 1 602E98C0
-P 5800 3700
-F 0 "Q1" H 6338 3746 50  0000 L CNN
-F 1 "2N2222Ae3" H 6338 3655 50  0000 L CNN
-F 2 "SamacSys_Parts:JANTX2N2222A" H 6350 3550 50  0001 L CNN
-F 3 "https://www.microsemi.com/document-portal/doc_download/8898-lds-0060-datasheet" H 6350 3450 50  0001 L CNN
-F 4 "Bipolar (BJT) Transistor NPN 50V 800mA 500mW Through Hole TO-18" H 6350 3350 50  0001 L CNN "Description"
-F 5 "2.16" H 6350 3250 50  0001 L CNN "Height"
-F 6 "Microsemi Corporation" H 6350 3150 50  0001 L CNN "Manufacturer_Name"
-F 7 "2N2222Ae3" H 6350 3050 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "494-2N2222AE3" H 6350 2950 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Microchip-Microsemi/2N2222Ae3/?qs=1mbolxNpo8c9lgGJRDEvpg%3D%3D" H 6350 2850 50  0001 L CNN "Mouser Price/Stock"
-F 10 "2N2222AE3" H 6350 2750 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/2n2222ae3/microsemi" H 6350 2650 50  0001 L CNN "Arrow Price/Stock"
-	1    5800 3700
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR09
 U 1 1 602F17C9
-P 6900 4800
-F 0 "#PWR09" H 6900 4550 50  0001 C CNN
-F 1 "GND" H 6905 4627 50  0000 C CNN
-F 2 "" H 6900 4800 50  0001 C CNN
-F 3 "" H 6900 4800 50  0001 C CNN
-	1    6900 4800
+P 6500 5200
+F 0 "#PWR09" H 6500 4950 50  0001 C CNN
+F 1 "GND" H 6505 5027 50  0000 C CNN
+F 2 "" H 6500 5200 50  0001 C CNN
+F 3 "" H 6500 5200 50  0001 C CNN
+	1    6500 5200
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -366,151 +252,67 @@ F 3 "" H 5400 4100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7400 4400 7300 4400
+	7100 4800 6900 4800
 Wire Wire Line
-	6900 4700 6900 4800
-Wire Wire Line
-	5900 3700 5800 3700
+	6500 5100 6500 5200
 Wire Wire Line
 	5400 4100 5400 4000
 $Comp
-L Device:C C3
-U 1 1 60300EF9
-P 6650 4100
-F 0 "C3" V 6398 4100 50  0000 C CNN
-F 1 ".01u" V 6489 4100 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 6688 3950 50  0001 C CNN
-F 3 "~" H 6650 4100 50  0001 C CNN
-	1    6650 4100
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6900 4100 6800 4100
-Connection ~ 6900 4100
-$Comp
 L power:GND #PWR08
 U 1 1 60302B14
-P 6400 4100
-F 0 "#PWR08" H 6400 3850 50  0001 C CNN
-F 1 "GND" H 6405 3927 50  0000 C CNN
-F 2 "" H 6400 4100 50  0001 C CNN
-F 3 "" H 6400 4100 50  0001 C CNN
-	1    6400 4100
+P 5650 4500
+F 0 "#PWR08" H 5650 4250 50  0001 C CNN
+F 1 "GND" H 5655 4327 50  0000 C CNN
+F 2 "" H 5650 4500 50  0001 C CNN
+F 3 "" H 5650 4500 50  0001 C CNN
+	1    5650 4500
 	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6500 4100 6400 4100
-$Comp
-L Device:C C2
-U 1 1 60304894
-P 5150 3400
-F 0 "C2" V 4898 3400 50  0000 C CNN
-F 1 ".01u" V 4989 3400 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5188 3250 50  0001 C CNN
-F 3 "~" H 5150 3400 50  0001 C CNN
-	1    5150 3400
-	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 60304A7C
-P 4900 3400
-F 0 "#PWR06" H 4900 3150 50  0001 C CNN
-F 1 "GND" H 4905 3227 50  0000 C CNN
-F 2 "" H 4900 3400 50  0001 C CNN
-F 3 "" H 4900 3400 50  0001 C CNN
-	1    4900 3400
+P 4700 3350
+F 0 "#PWR06" H 4700 3100 50  0001 C CNN
+F 1 "GND" H 4705 3177 50  0000 C CNN
+F 2 "" H 4700 3350 50  0001 C CNN
+F 3 "" H 4700 3350 50  0001 C CNN
+	1    4700 3350
 	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 3400 4900 3400
-Wire Wire Line
-	5300 3400 5400 3400
-$Comp
-L Device:R R1
-U 1 1 6030A0D7
-P 3100 3950
-F 0 "R1" H 3170 3996 50  0000 L CNN
-F 1 "1k" H 3170 3905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 3030 3950 50  0001 C CNN
-F 3 "~" H 3100 3950 50  0001 C CNN
-	1    3100 3950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 6030A929
-P 3350 4100
-F 0 "C1" H 3235 4054 50  0000 R CNN
-F 1 ".01u" H 3235 4145 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3388 3950 50  0001 C CNN
-F 3 "~" H 3350 4100 50  0001 C CNN
-	1    3350 4100
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR05
 U 1 1 6030B39E
-P 3350 4350
-F 0 "#PWR05" H 3350 4100 50  0001 C CNN
-F 1 "GND" H 3355 4177 50  0000 C CNN
-F 2 "" H 3350 4350 50  0001 C CNN
-F 3 "" H 3350 4350 50  0001 C CNN
-	1    3350 4350
+P 3900 4550
+F 0 "#PWR05" H 3900 4300 50  0001 C CNN
+F 1 "GND" H 3905 4377 50  0000 C CNN
+F 2 "" H 3900 4550 50  0001 C CNN
+F 3 "" H 3900 4550 50  0001 C CNN
+	1    3900 4550
 	1    0    0    -1  
 $EndComp
-Text Label 3750 3950 0    50   ~ 0
+Text Label 4250 3950 0    50   ~ 0
 AZctlr
-Wire Wire Line
-	3250 3950 3350 3950
-Wire Wire Line
-	3750 3950 3350 3950
-Connection ~ 3350 3950
-$Comp
-L Device:R R3
-U 1 1 6031247A
-P 7350 3300
-F 0 "R3" V 7557 3300 50  0000 C CNN
-F 1 "4k7" V 7466 3300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7280 3300 50  0001 C CNN
-F 3 "~" H 7350 3300 50  0001 C CNN
-	1    7350 3300
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 603126B6
-P 7100 2900
-F 0 "#PWR010" H 7100 2650 50  0001 C CNN
-F 1 "GND" H 7105 2727 50  0000 C CNN
-F 2 "" H 7100 2900 50  0001 C CNN
-F 3 "" H 7100 2900 50  0001 C CNN
-	1    7100 2900
-	-1   0    0    1   
+P 7500 3200
+F 0 "#PWR010" H 7500 2950 50  0001 C CNN
+F 1 "GND" H 7505 3027 50  0000 C CNN
+F 2 "" H 7500 3200 50  0001 C CNN
+F 3 "" H 7500 3200 50  0001 C CNN
+	1    7500 3200
+	0    -1   -1   0   
 $EndComp
-Text Label 6700 3300 2    50   ~ 0
+Text Label 6350 3200 2    50   ~ 0
 SPDctlr
-Wire Wire Line
-	7100 3000 7100 2900
-Wire Wire Line
-	8750 3500 7600 3500
-Wire Wire Line
-	6200 3700 8750 3700
 Text Label 5400 3300 0    50   ~ 0
 CCWctlr
-Text Label 6900 4000 0    50   ~ 0
+Text Label 6500 4400 0    50   ~ 0
 CWctlr
 Wire Wire Line
-	6900 4000 6900 4100
+	6500 4400 6500 4500
 Wire Wire Line
-	5400 3300 5400 3400
-Connection ~ 5400 3400
-Wire Wire Line
-	2250 3950 2950 3950
-Wire Wire Line
-	7500 3300 7600 3300
-Wire Wire Line
-	7600 3300 7600 3500
+	5400 3300 5400 3350
 $Comp
 L Connector:Screw_Terminal_01x06 J1
 U 1 1 60374D82
@@ -523,32 +325,16 @@ F 3 "~" H 5900 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push_Dual SW1
-U 1 1 602C9A87
-P 3350 3250
-F 0 "SW1" H 3350 3535 50  0000 C CNN
-F 1 "SW_Push_Dual" H 3350 3444 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H8mm" H 3350 3450 50  0001 C CNN
-F 3 "~" H 3350 3450 50  0001 C CNN
-	1    3350 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR011
 U 1 1 602D6E17
-P 3700 3450
-F 0 "#PWR011" H 3700 3200 50  0001 C CNN
-F 1 "GND" H 3705 3277 50  0000 C CNN
-F 2 "" H 3700 3450 50  0001 C CNN
-F 3 "" H 3700 3450 50  0001 C CNN
-	1    3700 3450
-	1    0    0    -1  
+P 3150 2250
+F 0 "#PWR011" H 3150 2000 50  0001 C CNN
+F 1 "GND" H 3155 2077 50  0000 C CNN
+F 2 "" H 3150 2250 50  0001 C CNN
+F 3 "" H 3150 2250 50  0001 C CNN
+	1    3150 2250
+	1    0    0    1   
 $EndComp
-Wire Wire Line
-	3550 3450 3550 3250
-Wire Wire Line
-	3150 3450 3150 3250
-Connection ~ 3150 3250
 Wire Wire Line
 	2250 3250 3150 3250
 Text Label 5600 2050 2    50   ~ 0
@@ -582,22 +368,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 2450 5700 2450
 Wire Wire Line
-	6700 3300 7100 3300
-$Comp
-L Device:CP C4
-U 1 1 6030D739
-P 7100 3150
-F 0 "C4" H 6982 3104 50  0000 R CNN
-F 1 "10u" H 6982 3195 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 7138 3000 50  0001 C CNN
-F 3 "~" H 7100 3150 50  0001 C CNN
-	1    7100 3150
-	-1   0    0    1   
-$EndComp
-Connection ~ 7100 3300
-Wire Wire Line
-	7100 3300 7200 3300
-Wire Wire Line
 	8750 3800 7700 3800
 Wire Wire Line
 	7700 3800 7700 4400
@@ -626,12 +396,7 @@ Connection ~ 8750 3800
 Connection ~ 2250 3250
 Connection ~ 2250 3950
 Wire Wire Line
-	3350 4250 3350 4350
-Wire Wire Line
 	1750 4350 2250 4350
-Wire Wire Line
-	3700 3450 3550 3450
-Connection ~ 3550 3450
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 603C0930
@@ -674,4 +439,245 @@ $EndComp
 Wire Wire Line
 	8850 4550 9150 4550
 Connection ~ 8850 4550
+$Comp
+L SamacSys_Parts:RDER71H103K0M1H03A C1
+U 1 1 60310170
+P 3900 4000
+F 0 "C1" V 4104 4128 50  0000 L CNN
+F 1 "RDER71H103K0M1H03A" V 4195 4128 50  0000 L CNN
+F 2 "SamacSys_Parts:RCE5C1H103J1A2H03B" H 4250 4050 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/RDER71H103K0M1H03A.html" H 4250 3950 50  0001 L CNN
+F 4 "Murata 10nF Multilayer Ceramic Capacitor (MLCC) 50 V dc +/-10% X7R Dielectric Ammo Radial Max. Op. Temp. +125C" H 4250 3850 50  0001 L CNN "Description"
+F 5 "5" H 4250 3750 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 4250 3650 50  0001 L CNN "Manufacturer_Name"
+F 7 "RDER71H103K0M1H03A" H 4250 3550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-RDER71H103K0M1H3A" H 4250 3450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/RDER71H103K0M1H03A/?qs=fPnNQ8fp3P6BVTqXbcHgxg%3D%3D" H 4250 3350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "RDER71H103K0M1H03A" H 4250 3250 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/rder71h103k0m1h03a/murata-manufacturing" H 4250 3150 50  0001 L CNN "Arrow Price/Stock"
+	1    3900 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:RDER71H103K0M1H03A C2
+U 1 1 60312987
+P 4850 3350
+F 0 "C2" H 5050 3650 50  0000 L CNN
+F 1 "RDER71H103K0M1H03A" H 4700 3550 50  0000 L CNN
+F 2 "SamacSys_Parts:RCE5C1H103J1A2H03B" H 5200 3400 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/RDER71H103K0M1H03A.html" H 5200 3300 50  0001 L CNN
+F 4 "Murata 10nF Multilayer Ceramic Capacitor (MLCC) 50 V dc +/-10% X7R Dielectric Ammo Radial Max. Op. Temp. +125C" H 5200 3200 50  0001 L CNN "Description"
+F 5 "5" H 5200 3100 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 5200 3000 50  0001 L CNN "Manufacturer_Name"
+F 7 "RDER71H103K0M1H03A" H 5200 2900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-RDER71H103K0M1H3A" H 5200 2800 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/RDER71H103K0M1H03A/?qs=fPnNQ8fp3P6BVTqXbcHgxg%3D%3D" H 5200 2700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "RDER71H103K0M1H03A" H 5200 2600 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/rder71h103k0m1h03a/murata-manufacturing" H 5200 2500 50  0001 L CNN "Arrow Price/Stock"
+	1    4850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:RDER71H103K0M1H03A C3
+U 1 1 60314FC4
+P 6300 4500
+F 0 "C3" H 6550 4235 50  0000 C CNN
+F 1 "RDER71H103K0M1H03A" H 6550 4326 50  0000 C CNN
+F 2 "SamacSys_Parts:RCE5C1H103J1A2H03B" H 6650 4550 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/RDER71H103K0M1H03A.html" H 6650 4450 50  0001 L CNN
+F 4 "Murata 10nF Multilayer Ceramic Capacitor (MLCC) 50 V dc +/-10% X7R Dielectric Ammo Radial Max. Op. Temp. +125C" H 6650 4350 50  0001 L CNN "Description"
+F 5 "5" H 6650 4250 50  0001 L CNN "Height"
+F 6 "Murata Electronics" H 6650 4150 50  0001 L CNN "Manufacturer_Name"
+F 7 "RDER71H103K0M1H03A" H 6650 4050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "81-RDER71H103K0M1H3A" H 6650 3950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/RDER71H103K0M1H03A/?qs=fPnNQ8fp3P6BVTqXbcHgxg%3D%3D" H 6650 3850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "RDER71H103K0M1H03A" H 6650 3750 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/rder71h103k0m1h03a/murata-manufacturing" H 6650 3650 50  0001 L CNN "Arrow Price/Stock"
+	1    6300 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 4000 3900 3950
+Connection ~ 3900 3950
+Wire Wire Line
+	3900 3950 4250 3950
+Wire Wire Line
+	3900 4550 3900 4500
+Wire Wire Line
+	4700 3350 4850 3350
+Wire Wire Line
+	5350 3350 5400 3350
+Connection ~ 5400 3350
+Wire Wire Line
+	5400 3350 5400 3400
+Wire Wire Line
+	5650 4500 5800 4500
+Wire Wire Line
+	6300 4500 6500 4500
+$Comp
+L SamacSys_Parts:EEA-GA1E100B C4
+U 1 1 60341A5B
+P 7350 3200
+F 0 "C4" H 7550 2950 50  0000 L CNN
+F 1 "EEA-GA1E100B" H 7400 3050 50  0000 L CNN
+F 2 "SamacSys_Parts:CAPPRD150W50D400H800" H 7700 3250 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/EEA-GA1E100B.pdf" H 7700 3150 50  0001 L CNN
+F 4 "PANASONIC ELECTRONIC COMPONENTS - EEA-GA1E100B - CAPACITOR, ALUM ELEC, 10UF, 5%, 25V, RADIAL LEADED" H 7700 3050 50  0001 L CNN "Description"
+F 5 "8" H 7700 2950 50  0001 L CNN "Height"
+F 6 "Panasonic" H 7700 2850 50  0001 L CNN "Manufacturer_Name"
+F 7 "EEA-GA1E100B" H 7700 2750 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "667-EEA-GA1E100B" H 7700 2650 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Panasonic/EEA-GA1E100B/?qs=6gIVE1Jgg%2Fy3qqkV0wnwqw%3D%3D" H 7700 2550 50  0001 L CNN "Mouser Price/Stock"
+F 10 "EEA-GA1E100B" H 7700 2450 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/eea-ga1e100b/panasonic" H 7700 2350 50  0001 L CNN "Arrow Price/Stock"
+	1    7350 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 3200 7350 3200
+Wire Wire Line
+	6850 3500 6850 3200
+Connection ~ 6850 3200
+$Comp
+L SamacSys_Parts:2N2222A Q2
+U 1 1 60378889
+P 6900 4800
+F 0 "Q2" H 7437 4754 50  0000 L CNN
+F 1 "2N2222A" H 7437 4845 50  0000 L CNN
+F 2 "SamacSys_Parts:TO-18_4" H 7450 4650 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/0e77/0900766b80e779e1.pdf" H 7450 4550 50  0001 L CNN
+F 4 "Transistor NPN 40V 0.6A TO-18" H 7450 4450 50  0001 L CNN "Description"
+F 5 "" H 7450 4350 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 7450 4250 50  0001 L CNN "Manufacturer_Name"
+F 7 "2N2222A" H 7450 4150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-2N2222A" H 7450 4050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/2N2222A?qs=UMEuL5FsraBzcgM1cdcH3A%3D%3D" H 7450 3950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7450 3850 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 7450 3750 50  0001 L CNN "Arrow Price/Stock"
+	1    6900 4800
+	-1   0    0    1   
+$EndComp
+Connection ~ 6500 4500
+$Comp
+L SamacSys_Parts:2N2222A Q1
+U 1 1 6037B87A
+P 5800 3700
+F 0 "Q1" H 6337 3654 50  0000 L CNN
+F 1 "2N2222A" H 6337 3745 50  0000 L CNN
+F 2 "SamacSys_Parts:TO-18_4" H 6350 3550 50  0001 L CNN
+F 3 "http://docs-emea.rs-online.com/webdocs/0e77/0900766b80e779e1.pdf" H 6350 3450 50  0001 L CNN
+F 4 "Transistor NPN 40V 0.6A TO-18" H 6350 3350 50  0001 L CNN "Description"
+F 5 "" H 6350 3250 50  0001 L CNN "Height"
+F 6 "STMicroelectronics" H 6350 3150 50  0001 L CNN "Manufacturer_Name"
+F 7 "2N2222A" H 6350 3050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "511-2N2222A" H 6350 2950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/2N2222A?qs=UMEuL5FsraBzcgM1cdcH3A%3D%3D" H 6350 2850 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 6350 2750 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 6350 2650 50  0001 L CNN "Arrow Price/Stock"
+	1    5800 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 4400 7100 4800
+$Comp
+L SamacSys_Parts:D6C40F2LFS S1
+U 1 1 60389B07
+P 4350 2800
+F 0 "S1" H 4950 2435 50  0000 C CNN
+F 1 "D6C40F2LFS" H 4950 2526 50  0000 C CNN
+F 2 "SamacSys_Parts:D6C40F2LFS" H 5400 2900 50  0001 L CNN
+F 3 "https://www.arrow.com/en/products/d6c40f2lfs/ck" H 5400 2800 50  0001 L CNN
+F 4 "Pushbutton Switches Key Switch N.O. SPDT 100 mA" H 5400 2700 50  0001 L CNN "Description"
+F 5 "9.8" H 5400 2600 50  0001 L CNN "Height"
+F 6 "C & K COMPONENTS" H 5400 2500 50  0001 L CNN "Manufacturer_Name"
+F 7 "D6C40F2LFS" H 5400 2400 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "611-D6C40F2LFS" H 5400 2300 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/CK/D6C40F2LFS/?qs=sb%252But3Lm4x0zytIpqAQYSQ%3D%3D" H 5400 2200 50  0001 L CNN "Mouser Price/Stock"
+F 10 "D6C40F2LFS" H 5400 2100 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/d6c40f2lfs/ck" H 5400 2000 50  0001 L CNN "Arrow Price/Stock"
+	1    4350 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 3250 3150 2800
+Wire Wire Line
+	3150 3250 4350 3250
+Wire Wire Line
+	4350 3250 4350 2800
+Connection ~ 3150 3250
+Wire Wire Line
+	3150 2700 3150 2250
+Wire Wire Line
+	4350 2700 4350 2250
+Wire Wire Line
+	4350 2250 3150 2250
+Connection ~ 3150 2250
+NoConn ~ 1300 4450
+NoConn ~ 1300 4350
+NoConn ~ 1750 4350
+NoConn ~ 1750 4450
+NoConn ~ 9100 2600
+NoConn ~ 9100 2700
+NoConn ~ 9450 2600
+NoConn ~ 9450 2700
+Wire Wire Line
+	6350 3200 6850 3200
+$Comp
+L 2021-02-19_01-40-20:CFM14JT4K70 R3
+U 1 1 603E8AE5
+P 7000 3500
+F 0 "R3" H 7250 3738 60  0000 C CNN
+F 1 "CFM14JT4K70" H 7250 3632 60  0000 C CNN
+F 2 "CFM14JT4K70:CFM14JT4K70" H 7250 3165 60  0001 C CNN
+F 3 "" H 7000 3500 60  0000 C CNN
+	1    7000 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3500 8750 3500
+Wire Wire Line
+	6850 3500 7000 3500
+$Comp
+L 2021-02-19_01-51-00:CFM14JT1K00 R4
+U 1 1 603F6B62
+P 7100 4400
+F 0 "R4" H 7350 4638 60  0000 C CNN
+F 1 "CFM14JT1K00" H 7350 4532 60  0000 C CNN
+F 2 "STA_CFM14_STP" H 7350 4065 60  0001 C CNN
+F 3 "" H 7100 4400 60  0000 C CNN
+	1    7100 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2021-02-19_01-51-00:CFM14JT1K00 R2
+U 1 1 603F79B6
+P 6050 3700
+F 0 "R2" H 6300 3938 60  0000 C CNN
+F 1 "CFM14JT1K00" H 6300 3832 60  0000 C CNN
+F 2 "STA_CFM14_STP" H 6300 3365 60  0001 C CNN
+F 3 "" H 6050 3700 60  0000 C CNN
+	1    6050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2021-02-19_01-51-00:CFM14JT1K00 R1
+U 1 1 603F80C9
+P 3100 3950
+F 0 "R1" H 3350 4188 60  0000 C CNN
+F 1 "CFM14JT1K00" H 3350 4082 60  0000 C CNN
+F 2 "STA_CFM14_STP" H 3350 3615 60  0001 C CNN
+F 3 "" H 3100 3950 60  0000 C CNN
+	1    3100 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 4400 7600 4400
+Wire Wire Line
+	2250 3950 3100 3950
+Wire Wire Line
+	3600 3950 3900 3950
+Wire Wire Line
+	5800 3700 6050 3700
+Wire Wire Line
+	6550 3700 8750 3700
 $EndSCHEMATC
